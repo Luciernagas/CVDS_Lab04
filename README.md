@@ -199,12 +199,30 @@ En este taller se va a utilizar un contenedor liviano ([GoogleGuice](https://git
 
 1. Utilizando el HangmanFactoryMethod (MétodoFabrica) incluya el
    OriginalScore a la configuración.
+   
+<p align="center">
+<img src="https://user-images.githubusercontent.com/104604359/190932136-ed4682e0-81e8-4745-bd35-f8e49eee4624.png" height="400px"/></p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/104604359/190932151-e10b4325-7682-4942-8ad8-0fcacaf43147.png"/></p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/104604359/190932164-9cce0e6b-5d3b-4e26-96a9-704e31dd58dc.png"/></p>
+
 
 Incorpore el Contenedor Liviano Guice dentro del proyecto:
 
 * Revise las dependencias necesarias en el pom.xml.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/104604359/190932636-e3400d0c-dde9-4768-9a2f-2cc7e40000aa.png"/></p>
+
 * Modifique la inyección de dependencias utilizando guice en lugar del
   método fábrica..
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/104604359/190932698-99641c67-7112-4871-83a2-8f592fd31497.png"/></p>
+
 * Configure la aplicación de manera que desde el programa SwingProject
   NO SE CONSTRUYA el Score directamente, sino a través de Guice, asi
   mismo como las otras dependencias que se están inyectando mediante
@@ -219,3 +237,8 @@ Incorpore el Contenedor Liviano Guice dentro del proyecto:
 	* etc...
 * Para lo anterior, [puede basarse en el ejemplo dado como
   referencia](https://github.com/PDSW-ECI/LightweighContainers_DepenendecyInjectionIntro-WordProcessor).
+  
+<p align="center">
+<img src="https://user-images.githubusercontent.com/104604359/190932977-194b98bc-d979-4c33-9a66-9fb82654b2e1.png"/></p>
+
+
