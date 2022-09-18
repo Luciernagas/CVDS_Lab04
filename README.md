@@ -1,8 +1,5 @@
-### Escuela Colombiana de Ingeniería
-
-### Procesos de Desarrollo de Software
-
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
+### Luisa Valentina De la hoz Rocha
 
 
 Para este taller se va a trabajar sobre el juego del ahorcado.
@@ -43,6 +40,7 @@ principio de inversión de dependencias:
 ### Parte I
 
 1. Clone el proyecto (no lo descargue!).
+
    
 2. A partir del código existente, implemente sólo los cascarones del
    modelo antes indicado.
