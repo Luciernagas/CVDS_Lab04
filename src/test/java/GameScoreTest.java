@@ -3,9 +3,11 @@ import hangman.model.GameScore;
 import hangman.model.OriginalScore;
 import hangman.model.PowerBonusScore;
 import hangman.model.exceptions.GameScoreException;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class GameScoreTest {
     private GameScore original = new OriginalScore();
@@ -17,12 +19,12 @@ public class GameScoreTest {
         try {
             original.calculateScore(-2, -2);
         } catch (GameScoreException e) {
-            throw new RuntimeException(e);
+            Assert.assertTrue(true);
         }
     }
 
     @Test
-    public void dadoEnOriginalScore_dosNumeros_Cuando_esCienYCero_Entonces_retornaCien() {
+    public void dadoEnOriginalScore_dosNumeros_Cuando_esCienYCero_Entonces_retornaCien() throws GameScoreException {
         //Arrange
         int correctCount = 100;
         int incorrectCount = 0;
@@ -34,7 +36,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void dadoEnOriginalScore_dosNumeros_Cuando_esDosYCinco_Entonces_retornaCincuenta() {
+    public void dadoEnOriginalScore_dosNumeros_Cuando_esDosYCinco_Entonces_retornaCincuenta() throws GameScoreException {
         //Arrange
         int correctCount = 2;
         int incorrectCount = 5;
@@ -46,7 +48,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void dadoEnOriginalScore_dosNumeros_Cuando_esTresYDoce_Entonces_retornaCero() {
+    public void dadoEnOriginalScore_dosNumeros_Cuando_esTresYDoce_Entonces_retornaCero() throws GameScoreException {
         //Arrange
         int correctCount = 3;
         int incorrectCount = 12;
@@ -62,12 +64,12 @@ public class GameScoreTest {
         try {
             bonus.calculateScore(-3, -3);
         } catch (GameScoreException e) {
-            throw new RuntimeException(e);
+            Assert.assertTrue(true);
         }
     }
 
     @Test
-    public void dadoEnBonusScore_dosNumeros_Cuando_esDosyCero_Entonces_retornaVeinte(){
+    public void dadoEnBonusScore_dosNumeros_Cuando_esDosyCero_Entonces_retornaVeinte() throws GameScoreException {
         //Arrange
         int correctCount = 2;
         int incorrectCount = 0;
@@ -79,7 +81,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void dadoEnBonusScore_dosNumeros_Cuando_esOchoyCinco_Entonces_retornaCincuentaycinco() {
+    public void dadoEnBonusScore_dosNumeros_Cuando_esOchoyCinco_Entonces_retornaCincuentaycinco() throws GameScoreException {
         //Arrange
         int correctCount = 8;
         int incorrectCount = 5;
@@ -91,7 +93,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void dadoEnBonusScore_dosNumeros_Cuando_esDosyNueve_Entonces_retornaCero() {
+    public void dadoEnBonusScore_dosNumeros_Cuando_esDosyNueve_Entonces_retornaCero() throws GameScoreException {
         //Arrange
         int correctCount = 2;
         int incorrectCount = 9;
@@ -107,12 +109,12 @@ public class GameScoreTest {
         try {
             power.calculateScore(-4, -4);
         } catch (GameScoreException e) {
-            throw new RuntimeException(e);
+            Assert.assertTrue(true);
         }
     }
 
     @Test
-    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esTresyCero_Entonces_retornaCientocincuentaycinco() {
+    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esTresyCero_Entonces_retornaCientocincuentaycinco() throws GameScoreException {
         //Arrange
         int correctCount = 3;
         int incorrectCount = 0;
@@ -124,7 +126,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esCincoyCero_Entonces_retornaQuinientos() {
+    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esCincoyCero_Entonces_retornaQuinientos() throws GameScoreException {
         //Arrange
         int correctCount = 5;
         int incorrectCount = 0;
@@ -136,7 +138,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esCeroyDos_Entonces_retornaCero() {
+    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esCeroyDos_Entonces_retornaCero() throws GameScoreException {
         //Arrange
         int correctCount = 0;
         int incorrectCount = 2;
@@ -148,7 +150,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esTresyUno_Entonces_retornaCientocuarentaysiete() {
+    public void dadoEnPowerBonusScore_dosNumeros_Cuando_esTresyUno_Entonces_retornaCientocuarentaysiete() throws GameScoreException {
         //Arrange
         int correctCount = 3;
         int incorrectCount = 1;
