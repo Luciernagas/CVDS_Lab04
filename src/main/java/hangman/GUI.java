@@ -33,6 +33,7 @@ public class GUI {
     private Language language;
     private HangmanDictionary dictionary;
     private HangmanPanel hangmanPanel;
+    private GameScore gameScore;
 
     private MainFrameController mainFrameController;
 
@@ -48,6 +49,7 @@ public class GUI {
         this.language = factoryMethod.createLanguage();
         this.dictionary = factoryMethod.createDictionary();
         this.hangmanPanel = factoryMethod.createHangmanPanel();
+        this.gameScore = factoryMethod.createHangmanGameScore();
     }
 
     @Inject
