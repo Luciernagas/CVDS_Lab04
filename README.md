@@ -139,7 +139,19 @@ valid = c > 0 & i > 0
 7. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
 
-En el código
+![image](https://user-images.githubusercontent.com/104604359/191521583-0c181905-35ac-475c-a1b3-54a0905209f4.png)
+
+![image](https://user-images.githubusercontent.com/104604359/191521656-82243034-f80e-4b08-ba5a-b4c1a8c6fdc2.png)
+
+![image](https://user-images.githubusercontent.com/104604359/191521712-3b6b59b8-12e7-4edc-bb3a-822ad216f9bb.png)
+
+![image](https://user-images.githubusercontent.com/104604359/191521776-bd58353d-d900-40ce-8690-5aa9ac8a9718.png)
+
+![image](https://user-images.githubusercontent.com/104604359/191521944-441b5b91-4b16-4cce-815f-557d631c2a4d.png)
+
+![image](https://user-images.githubusercontent.com/104604359/191522019-8675bea4-dfc7-4b03-b1c4-1ec2794e5d96.png)
+
+![image](https://user-images.githubusercontent.com/104604359/191522129-81292e9d-8685-48f4-8cae-656117926eae.png)
 
 8. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
